@@ -15,15 +15,11 @@ import org.junit.runner.RunWith
 class MainActivityTest {
 
 
-//
-    @get:Rule
-    var activityRule: ActivityTestRule<MainActivity>
-            = ActivityTestRule(MainActivity::class.java)
 
     @Test
     fun test_activityInView() {
 //        // this scenario will launch this specific Activity Isolated for this Test function
-      // val senario =  ActivityScenario.launch(MainActivity::class.java)      //senario.moveToState(Lifecycle.State.CREATED)
+      val senario =  ActivityScenario.launch(MainActivity::class.java)      //senario.moveToState(Lifecycle.State.CREATED)
         onView(withId(R.id.main)).check(matches(isDisplayed()))
     }
 
