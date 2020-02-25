@@ -2,18 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First Activity"
-        android:textStyle="bold"
+        android:text="@string/first_activity"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -21,12 +21,11 @@
 
 
     <Button
+        android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Next "
-        android:id="@+id/btn_next"
-        app:layout_constraintStart_toStartOf="@id/tv_main"
+        android:text="Next "
         app:layout_constraintEnd_toEndOf="@id/tv_main"
-        app:layout_constraintTop_toBottomOf="@id/tv_main"
-        />
+        app:layout_constraintStart_toStartOf="@id/tv_main"
+        app:layout_constraintTop_toBottomOf="@id/tv_main" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,26 +8,24 @@
 
 
     <TextView
+        android:id="@+id/tv_second_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Second Activity"
-        android:textStyle="bold"
-        android:id="@+id/tv_second_activity"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Second Activity" />
 
     <Button
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Back"
-        android:id="@+id/btn_back"
-        app:layout_constraintStart_toStartOf="@id/tv_second_activity"
+        android:text="Back"
         app:layout_constraintEnd_toEndOf="@id/tv_second_activity"
-        app:layout_constraintTop_toBottomOf="@id/tv_second_activity"
-        />
+        app:layout_constraintStart_toStartOf="@id/tv_second_activity"
+        app:layout_constraintTop_toBottomOf="@id/tv_second_activity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
