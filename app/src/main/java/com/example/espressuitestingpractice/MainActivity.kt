@@ -12,5 +12,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         btn_next.setOnClickListener {
             startActivity(Intent(this,SecondActivity::class.java))
         }
+        btn_goToThird.setOnClickListener {
+            startActivity(Intent(this,ThirdActivity::class.java))
+
+        }
     }
 }
