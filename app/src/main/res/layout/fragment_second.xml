@@ -8,15 +8,26 @@
 
     <TextView
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="Second Fragment"
         android:gravity="center"
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
+        android:id="@+id/tv_second"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/tv_second"
+        app:layout_constraintStart_toStartOf="@id/tv_second"
+        app:layout_constraintTop_toBottomOf="@id/tv_second"
+        tools:text="data Recieved"
+        android:id="@+id/tv_data_recieved"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
