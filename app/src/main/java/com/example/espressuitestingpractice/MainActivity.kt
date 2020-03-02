@@ -15,7 +15,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
         btn_goToThird.setOnClickListener {
             startActivity(Intent(this,ThirdActivity::class.java))
-
+        }
+        btn_test_intent.setOnClickListener {
+            startActivity(Intent(this,ImageIntentActivity::class.java))
         }
     }
 }
