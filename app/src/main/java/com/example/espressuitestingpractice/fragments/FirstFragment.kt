@@ -12,9 +12,7 @@ import com.example.espressuitestingpractice.R
 import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.fragment_first.view.*
 
-/**
- * A simple [Fragment] subclass.
- */
+
 class FirstFragment : Fragment(R.layout.fragment_first) {
 
 

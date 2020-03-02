@@ -1,7 +1,8 @@
-package com.example.espressuitestingpractice
+package com.example.espressuitestingpractice.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.espressuitestingpractice.R
 
 class ThirdActivity : AppCompatActivity() {
 

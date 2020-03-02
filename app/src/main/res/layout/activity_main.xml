@@ -5,19 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <TextView
         android:id="@+id/tv_main"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
         android:text="@string/first_activity"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/textStyle" />
 
 
     <Button
@@ -43,6 +39,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_goToThird" />
+
+
+    <Button
+        android:id="@+id/btn_test_intent_camera"
+        style="@style/btn_style"
+        android:text="@string/test_for_intents_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_test_intent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hr_guideline"

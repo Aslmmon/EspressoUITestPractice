@@ -4,7 +4,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="go_to_third">Go To Third</string>
     <string name="test_for_intents_text">Test For Intents</string>
+    <string name="test_for_intents_camera">Test For Camera Intent</string>
     <string name="select_image_from_gallery_title">Select image from Gallery</string>
     <string name="test_acitivties_title">Test Acitivties</string>
     <string name="test_fragments">Test Fragments</string>
+    <string name="launch_camera">launch Camera</string>
 </resources>

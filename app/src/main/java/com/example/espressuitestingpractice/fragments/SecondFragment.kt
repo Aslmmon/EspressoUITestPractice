@@ -10,9 +10,6 @@ import android.view.ViewGroup
 import com.example.espressuitestingpractice.R
 import kotlinx.android.synthetic.main.fragment_second.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class SecondFragment : Fragment(R.layout.fragment_second) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
