@@ -28,7 +28,7 @@ import org.junit.runner.RunWith
 class ImageIntentActivityTest {
 
     @get:Rule
-    val intentsTestRule = IntentsTestRule(MainActivity::class.java)
+    val intentsTestRule = IntentsTestRule(ImageIntentActivity::class.java)
 
     @Test
     fun test_validateIntentSentToPackage() {
@@ -40,7 +40,7 @@ class ImageIntentActivityTest {
         val activityResult = createGalleryPickActivityResultStub()
         intending(expectedIntent).respondWith(activityResult)
 
-        onView(withId(R.id.btn_test_intent)).perform(click())
+       // onView(withId(R.id.btn_test_intent)).perform(click())
         // Execute and Verify
         onView(withId(R.id.button_open_gallery)).perform(click())
         intended(expectedIntent)

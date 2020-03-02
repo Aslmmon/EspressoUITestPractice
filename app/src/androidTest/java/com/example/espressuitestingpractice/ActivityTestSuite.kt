@@ -11,6 +11,7 @@ import org.junit.runners.Suite
     NavigationTest::class,
     FirstFragmentTest::class,
     SecondActivityTest::class,
-    ImageIntentActivityTest::class
+    ImageIntentActivityTest::class,
+    CameraIntentActivityTest::class
 )
 class ActivityTestSuite
