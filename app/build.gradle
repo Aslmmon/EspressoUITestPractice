@@ -10,7 +10,7 @@ android {
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.example.espressuitestingpractice"
-        minSdkVersion 15
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -87,6 +87,10 @@ dependencies {
     // dependency to appear on your APK's compile classpath or the test APK
     // classpath.
     androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.2.0'
+
+    //noinspection GradleDependency
+    implementation "com.google.android.material:material:1.0.0"
+
 
     //glide
     def glide_version = "4.9.0"

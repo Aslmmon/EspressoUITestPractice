@@ -10,6 +10,7 @@ import org.junit.runners.Suite
     SecondActivityTest::class,
     NavigationTest::class,
     FirstFragmentTest::class,
-    SecondActivityTest::class
+    SecondActivityTest::class,
+    ImageIntentActivityTest::class
 )
 class ActivityTestSuite
