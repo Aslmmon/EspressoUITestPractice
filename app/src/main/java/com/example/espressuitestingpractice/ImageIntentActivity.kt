@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_image_intent.*
 
 const val GALLERY_REQUEST_CODE = 1234
 
-class ImageIntentActivity : AppCompatActivity(R.layout.activity_image_intent){
+class ImageIntentActivity : AppCompatActivity(R.layout.activity_image_intent) {
 
     private val TAG: String = "AppDebug"
 
@@ -25,9 +25,9 @@ class ImageIntentActivity : AppCompatActivity(R.layout.activity_image_intent){
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(resultCode == Activity.RESULT_OK){
+        if (resultCode == Activity.RESULT_OK) {
             Log.d(TAG, "RESULT_OK")
-            when(requestCode){
+            when (requestCode) {
                 GALLERY_REQUEST_CODE -> {
                     Log.d(TAG, "GALLERY_REQUEST_CODE detected.")
                     data?.data?.let { uri ->
